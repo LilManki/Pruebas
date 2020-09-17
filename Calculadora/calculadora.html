@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Calculadora </title>
+		<link rel="stylesheet" href="estilos.css"/>
+	</head>
+	<body>
+		<section>
+			<div class='container'>
+				<form name = "form">
+					<input type="text" id="output">
+				</form>
+				<table>
+					<tr>
+						<td><input class="single" type="button" value="7" onclick="numbers(value);"></td>
+						<td><input class="single" type="button" value="8" onclick="numbers(value);"></td>
+						<td><input class="single" type="button" value="9" onclick="numbers(value);"></td>
+						<td colspan="2"><input class="double" type="button" value="<" onclick="back()"></td>
+					</tr>
+					<tr>
+						<td><input class="single" type="button" value="4" onclick="numbers(value);"></td>
+						<td><input class="single" type="button" value="5" onclick="numbers(value);"></td>
+						<td><input class="single" type="button" value="6" onclick="numbers(value);"></td>
+						<td><input class="single" type="button" value="x" onclick="ops('*');"></td>
+						<td><input class="single" type="button" value="/" onclick="ops(value);"></td>
+					</tr>
+						<td><input class="single" type="button" value="1" onclick="numbers(value);"></td>
+						<td><input class="single" type="button" value="2" onclick="numbers(value);"></td>
+						<td><input class="single" type="button" value="3" onclick="numbers(value);"></td>
+						<td><input class="single" type="button" value="+" onclick="ops(value);"></td>
+						<td><input class="single" type="button" value="-" onclick="ops(value);"></td>
+					<tr>
+						<td colspan="2"><input class="double" type="button" value="0" onclick="numbers(value);"></td>
+						<td><input class="single" type="button" value="." onclick="point(value)";></td>
+						<td colspan = "2"><input class="double" type="button" value="=" onclick="rta();"></td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		<script src="script.js"></script>
+	</body>
+</html>
